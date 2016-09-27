@@ -1,0 +1,121 @@
+Buildfile: /usr/share/nutch-2.3.1/build.xml
+Trying to override old definition of task javac
+  [taskdef] Could not load definitions from resource org/sonar/ant/antlib.xml. It could not be found.
+
+ivy-probe-antlib:
+
+ivy-download:
+  [taskdef] Could not load definitions from resource org/sonar/ant/antlib.xml. It could not be found.
+
+ivy-download-unchecked:
+
+ivy-init-antlib:
+
+ivy-init:
+
+init:
+
+clean-lib:
+
+resolve-default:
+[ivy:resolve] :: Ivy 2.1.0 - 20090925235825 :: http://ant.apache.org/ivy/ ::
+[ivy:resolve] :: loading settings :: file = /usr/share/nutch-2.3.1/ivy/ivysettings.xml
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] You probably access the destination server through a proxy server that is not well configured.
+[ivy:resolve] 
+[ivy:resolve] :: problems summary ::
+[ivy:resolve] :::: WARNINGS
+[ivy:resolve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.pom
+[ivy:resolve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.jar
+[ivy:resolve] 	Host oss.sonatype.org not found. url=http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/11.0.2/guava-11.0.2.pom
+[ivy:resolve] 	Host oss.sonatype.org not found. url=http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/11.0.2/guava-11.0.2.jar
+[ivy:resolve] 	Host repository.apache.org not found. url=https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/11.0.2/guava-11.0.2.pom
+[ivy:resolve] 	Host repository.apache.org not found. url=https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/11.0.2/guava-11.0.2.jar
+[ivy:resolve] 		module not found: com.google.guava#guava;11.0.2
+[ivy:resolve] 	==== local: tried
+[ivy:resolve] 	  /root/.ivy2/local/com.google.guava/guava/11.0.2/ivys/ivy.xml
+[ivy:resolve] 	  -- artifact com.google.guava#guava;11.0.2!guava.jar:
+[ivy:resolve] 	  /root/.ivy2/local/com.google.guava/guava/11.0.2/jars/guava.jar
+[ivy:resolve] 	==== maven2: tried
+[ivy:resolve] 	  http://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;11.0.2!guava.jar:
+[ivy:resolve] 	  http://repo1.maven.org/maven2/com/google/guava/guava/11.0.2/guava-11.0.2.jar
+[ivy:resolve] 	==== sonatype: tried
+[ivy:resolve] 	  http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/11.0.2/guava-11.0.2.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;11.0.2!guava.jar:
+[ivy:resolve] 	  http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/11.0.2/guava-11.0.2.jar
+[ivy:resolve] 	==== apache-snapshot: tried
+[ivy:resolve] 	  https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/11.0.2/guava-11.0.2.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;11.0.2!guava.jar:
+[ivy:resolve] 	  https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/11.0.2/guava-11.0.2.jar
+[ivy:resolve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/google/guava/guava/13.0/guava-13.0.pom
+[ivy:resolve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/google/guava/guava/13.0/guava-13.0.jar
+[ivy:resolve] 	Host oss.sonatype.org not found. url=http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/13.0/guava-13.0.pom
+[ivy:resolve] 	Host oss.sonatype.org not found. url=http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/13.0/guava-13.0.jar
+[ivy:resolve] 	Host repository.apache.org not found. url=https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/13.0/guava-13.0.pom
+[ivy:resolve] 	Host repository.apache.org not found. url=https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/13.0/guava-13.0.jar
+[ivy:resolve] 		module not found: com.google.guava#guava;13.0
+[ivy:resolve] 	==== local: tried
+[ivy:resolve] 	  /root/.ivy2/local/com.google.guava/guava/13.0/ivys/ivy.xml
+[ivy:resolve] 	  -- artifact com.google.guava#guava;13.0!guava.jar:
+[ivy:resolve] 	  /root/.ivy2/local/com.google.guava/guava/13.0/jars/guava.jar
+[ivy:resolve] 	==== maven2: tried
+[ivy:resolve] 	  http://repo1.maven.org/maven2/com/google/guava/guava/13.0/guava-13.0.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;13.0!guava.jar:
+[ivy:resolve] 	  http://repo1.maven.org/maven2/com/google/guava/guava/13.0/guava-13.0.jar
+[ivy:resolve] 	==== sonatype: tried
+[ivy:resolve] 	  http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/13.0/guava-13.0.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;13.0!guava.jar:
+[ivy:resolve] 	  http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/13.0/guava-13.0.jar
+[ivy:resolve] 	==== apache-snapshot: tried
+[ivy:resolve] 	  https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/13.0/guava-13.0.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;13.0!guava.jar:
+[ivy:resolve] 	  https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/13.0/guava-13.0.jar
+[ivy:resolve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[ivy:resolve] 	Host repo1.maven.org not found. url=http://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[ivy:resolve] 	Host oss.sonatype.org not found. url=http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[ivy:resolve] 	Host oss.sonatype.org not found. url=http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[ivy:resolve] 	Host repository.apache.org not found. url=https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[ivy:resolve] 	Host repository.apache.org not found. url=https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[ivy:resolve] 		module not found: com.google.guava#guava;14.0.1
+[ivy:resolve] 	==== local: tried
+[ivy:resolve] 	  /root/.ivy2/local/com.google.guava/guava/14.0.1/ivys/ivy.xml
+[ivy:resolve] 	  -- artifact com.google.guava#guava;14.0.1!guava.jar:
+[ivy:resolve] 	  /root/.ivy2/local/com.google.guava/guava/14.0.1/jars/guava.jar
+[ivy:resolve] 	==== maven2: tried
+[ivy:resolve] 	  http://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;14.0.1!guava.jar:
+[ivy:resolve] 	  http://repo1.maven.org/maven2/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[ivy:resolve] 	==== sonatype: tried
+[ivy:resolve] 	  http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;14.0.1!guava.jar:
+[ivy:resolve] 	  http://oss.sonatype.org/content/repositories/releases/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[ivy:resolve] 	==== apache-snapshot: tried
+[ivy:resolve] 	  https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/14.0.1/guava-14.0.1.pom
+[ivy:resolve] 	  -- artifact com.google.guava#guava;14.0.1!guava.jar:
+[ivy:resolve] 	  https://repository.apache.org/content/repositories/snapshots/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[ivy:resolve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:resolve] 		::          UNRESOLVED DEPENDENCIES         ::
+[ivy:resolve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:resolve] 		:: com.google.guava#guava;11.0.2: not found
+[ivy:resolve] 		:: com.google.guava#guava;13.0: not found
+[ivy:resolve] 		:: com.google.guava#guava;14.0.1: not found
+[ivy:resolve] 		::::::::::::::::::::::::::::::::::::::::::::::
+[ivy:resolve] 
+[ivy:resolve] :: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS

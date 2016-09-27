@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+ contributor license agreements.  See the NOTICE file distributed with
+ this work for additional information regarding copyright ownership.
+ The ASF licenses this file to You under the Apache License, Version 2.0
+ (the "License"); you may not use this file except in compliance with
+ the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+    <property>
+        <name>storage.data.store.class</name>
+        <value>org.apache.gora.hbase.store.HBaseStore</value>
+    </property> 
+   <property>
+          <name>http.agent.name</name>
+           <value>my spider</value>
+    </property> 
+    <property>
+        <name>elastic.host</name>
+        <value>es-1</value>
+    </property>
+
+    <property>
+      <name>plugin.includes</name>
+     <value>protocol-http|urlfilter-regex|parse-(html|tika|js)|index-(basic|anchor|more)|urlnormalizer-(pass|regex|basic)|scoring-opic|indexer-elastic</value>
+     <description>Regular expression naming plugin directory names to
+      include.  Any plugin not matching this expression is excluded.
+      In any case you need at least include the nutch-extensionpoints plugin. By
+      default Nutch includes crawling just HTML and plain text via HTTP,
+      and basic indexing and search plugins. In order to use HTTPS please enable 
+      protocol-httpclient, but be aware of possible intermittent problems with the 
+      underlying commons-httpclient library.
+      </description>
+    </property>
+<property>
+  <name>gora.buffer.read.limit</name>
+  <value>1000</value>
+  <description>The maximum number of buffered Records we wish to
+  read in one batch. @see org.apache.gora.mapreduce.GoraRecordReader
+  </description>
+</property>
+
+<property>
+  <name>gora.buffer.write.limit</name>
+  <value>1000</value>
+  <description>Configures (for the Hadoop record writer) the maximum number of 
+  buffered Records we wish to regularly flush to the Gora datastore. 
+  @see org.apache.gora.mapreduce.GoraRecordWriter.
+  </description>
+</property>
+
+</configuration>
