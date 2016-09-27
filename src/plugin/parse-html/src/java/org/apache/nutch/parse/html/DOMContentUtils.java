@@ -370,6 +370,7 @@ public class DOMContentUtils {
 
               if (attrName.indexOf("data-") >= 0) {
                   target.append(getLink(attr.getNodeValue(),base.toString()));
+                  LOG.info("data-   :"+base.toString()+" \\ "+target.toString());
               } 
               
               if(attrName.indexOf("data-main") >= 0){
