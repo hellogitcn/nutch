@@ -369,15 +369,15 @@ public class DOMContentUtils {
               }
 
               if (attrName.indexOf("data-") >= 0) {
-                  String datalink = null;
-                  datalink = getLink(attr.getNodeValue(),base.toString());
-                  if(datalink != null){         
-                      target.append(datalink);
+                  //String datalink = null;
+                  //datalink = getLink(attr.getNodeValue(),base.toString());
+                  //if(datalink != null){         
+                      target.append(attr.getNodeValue());
                       if(attrName.indexOf("data-main") >= 0){
                          target.append(".js");
                       }    
-                      LOG.info("data-   :"+base.toString()+" \\ "+target.toString());
-                  }
+                      LOG.info("data-   :"+attrName+" \\ "+target.toString());
+                  //}
 
               } 
 
