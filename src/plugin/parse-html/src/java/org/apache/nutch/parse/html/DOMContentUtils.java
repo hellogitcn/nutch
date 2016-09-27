@@ -369,25 +369,31 @@ public class DOMContentUtils {
               }
 
               if (attrName.indexOf("data-") >= 0) {
-                  target.append(getLink(attr.getNodeValue(),base.toString()));
-                  LOG.info("data-   :"+base.toString()+" \\ "+target.toString());
-              } 
-              
-              if(attrName.indexOf("data-main") >= 0){
-                  target.append(".js");
-              }
-         
-             
-            }
-            if (target != null && !noFollow && !post)
-              try {
+                  String datalink = null;
+                  datalink = getLink(attr.getNodeValue(),base.toString());
+                  if(datalink != null){         
+                      target.append(datalink);
+                      if(attrName.indexOf("data-main") >= 0){
+                         target.append(".js");
+                      }    
+                      LOG.info("data-   :"+base.toString()+" \\ "+target.toString());
+                  }
 
-                URL url = URLUtil.resolveURL(base, target.toString());
-                outlinks.add(new Outlink(url.toString(), linkText.toString()
-                    .trim()));
-              } catch (MalformedURLException e) {
-                // don't care
-              }
+              } 
+
+
+              if (target.length() != 0 && !noFollow && !post)
+                  try {
+
+                      URL url = URLUtil.resolveURL(base, target.toString());
+                      outlinks.add(new Outlink(url.toString(),
+                                  linkText.toString().trim()));
+                     target.delete(0,target.length());
+                  } catch (MalformedURLException e) {
+                    // don't care
+                 }  
+            }
+            
           }
           // this should not have any children, skip them
           if (params.childLen == 0)
