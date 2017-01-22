@@ -385,12 +385,17 @@ public class DOMContentUtils {
               if (target.length() != 0 && !noFollow && !post)
                   try {
 
+                     LOG.info("href url  "+target.toString());
                       URL url = URLUtil.resolveURL(base, target.toString());
-                      outlinks.add(new Outlink(url.toString(),
-                                  linkText.toString().trim()));
+                      OutLink  newLink = new OutLink(url.toString(),
+                                                     linkText.toString().trim());
+                      if( !outlinks.contains(newLink){
+                          outLinks.add(newLink):
+                      }
                      target.delete(0,target.length());
                   } catch (MalformedURLException e) {
-                    // don't care
+                     // don't care
+                     LOG.info(e.getMessage());
                  }  
             }
             

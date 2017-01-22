@@ -297,7 +297,7 @@
    command has run, exclude them. The conf directory has them. 
    -->
    <zipfileset dir="${build.classes}" excludes="nutch-default.xml,nutch-site.xml" />
-   <zipfileset dir="${conf.dir}" excludes="*.template,hadoop*.*" />
+   <!--<zipfileset dir="${conf.dir}" excludes="*.template,hadoop*.*" />-->
    <!-- 
    need to exclude hsqldb.jar due to a conflicting version already present 
    in Hadoop/lib. 
