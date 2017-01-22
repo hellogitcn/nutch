@@ -38,5 +38,9 @@
         <value>2181</value>
     </property>
 
+    <property>
+       <name>hbase.client.keyvalue.maxsize</name>
+        <value>204800</value>
+    </property>
 
 </configuration>

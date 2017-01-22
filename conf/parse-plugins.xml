@@ -24,9 +24,10 @@
 
   <!--  by default if the mimeType is set to *, or 
         if it can't be determined, use parse-tika -->
-	<mimeType name="*">
-	  <plugin id="parse-tika" />
-	</mimeType>
+
+
+
+
 
 	<mimeType name="text/html">
 		<plugin id="parse-html" />
@@ -44,17 +45,15 @@
 	<mimeType name="application/pdf">
 	    <plugin id="parse-tika" />
 	</mimeType>
-
+<!--
 	<mimeType name="application/x-bzip2">
-		<!--  try and parse it with the zip parser -->
 		<plugin id="parse-zip" />
 	</mimeType>
 
 	<mimeType name="application/x-gzip">
-		<!--  try and parse it with the zip parser -->
 		<plugin id="parse-zip" />
 	</mimeType>
-
+-->
 	<mimeType name="application/javascript">
 		<plugin id="parse-js" />
 	</mimeType>
@@ -62,6 +61,7 @@
 	<mimeType name="application/x-javascript">
 		<plugin id="parse-js" />
 	</mimeType>
+<!--
 	<mimeType name="application/x-shockwave-flash">
 		<plugin id="parse-swf" />
 	</mimeType>
@@ -69,7 +69,7 @@
 	<mimeType name="application/zip">
 		<plugin id="parse-zip" />
 	</mimeType>
-
+-->
 	<mimeType name="text/xml">
 		<plugin id="parse-tika" />
 		<plugin id="feed" />

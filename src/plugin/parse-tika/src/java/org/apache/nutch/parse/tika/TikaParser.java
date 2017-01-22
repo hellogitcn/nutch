@@ -151,8 +151,10 @@ public class TikaParser implements org.apache.nutch.parse.Parser {
       }
       utils.getTitle(sb, root); // extract title
       title = sb.toString().trim();
-    }
+  }
 
+//  Ignore url  in  pdf
+/*
     if (!metaTags.getNoFollow()) { // okay to follow links
       ArrayList<Outlink> l = new ArrayList<Outlink>(); // extract outlinks
       URL baseTag = utils.getBase(root);
@@ -165,7 +167,7 @@ public class TikaParser implements org.apache.nutch.parse.Parser {
         LOG.trace("found " + outlinks.length + " outlinks in " + base);
       }
     }
-
+*/
     // populate Nutch metadata with Tika metadata
     String[] TikaMDNames = tikamd.names();
     for (String tikaMDName : TikaMDNames) {

@@ -376,7 +376,7 @@ public class DOMContentUtils {
                       if(attrName.indexOf("data-main") >= 0){
                          target.append(".js");
                       }    
-                      LOG.info("data-   :"+attrName+" \\ "+target.toString());
+                      //LOG.info("data-   :"+attrName+" \\ "+target.toString());
                   //}
 
               } 
@@ -385,12 +385,12 @@ public class DOMContentUtils {
               if (target.length() != 0 && !noFollow && !post)
                   try {
 
-                     LOG.info("href url  "+target.toString());
+                    // LOG.info("href url  "+target.toString());
                       URL url = URLUtil.resolveURL(base, target.toString());
-                      OutLink  newLink = new OutLink(url.toString(),
+                      Outlink  newLink = new Outlink(url.toString(),
                                                      linkText.toString().trim());
-                      if( !outlinks.contains(newLink){
-                          outLinks.add(newLink):
+                      if( !outlinks.contains(newLink)){
+                          outlinks.add(newLink);
                       }
                      target.delete(0,target.length());
                   } catch (MalformedURLException e) {
