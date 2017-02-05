@@ -28,6 +28,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.nutch.indexer.IndexWriter;
 import org.apache.nutch.indexer.NutchDocument;
+import org.apache.nutch.metadata.Nutch;
 import org.elasticsearch.ElasticsearchException;
 import org.elasticsearch.action.ListenableActionFuture;
 import org.elasticsearch.action.bulk.BulkItemResponse;
@@ -71,13 +72,14 @@ public class ElasticIndexWriter implements IndexWriter {
   private int bulkDocs = 0;
   private int bulkLength = 0;
   private boolean createNewBulk = false;
+  private String crawlid = "";
 
   @Override
   public void open(Configuration job) throws IOException {
     clusterName = job.get(ElasticConstants.CLUSTER);
     host = job.get(ElasticConstants.HOST);
     port = job.getInt(ElasticConstants.PORT, 9300);
-
+    crawlid = job.get(Nutch.CRAWL_ID_KEY);
     Builder settingsBuilder = Settings.settingsBuilder();
 
     BufferedReader reader = new BufferedReader(
@@ -124,7 +126,7 @@ public class ElasticIndexWriter implements IndexWriter {
     String id = (String) doc.getFieldValue("id");
     String type = doc.getDocumentMeta().get("type");
    // if (type == null)
-    type = "doc";
+    type = crawlid;
 
     String[] mt   = doc.getFieldValue("type").split("/");
     LOG.info("type:"+doc.getFieldValue("type"));
