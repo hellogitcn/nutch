@@ -31,7 +31,7 @@
     </property>
    <property>
         <name>hbase.zookeeper.quorum</name>
-        <value>hbase-hadoop-master,hbase-hadoop-slave-1,hbase-hadoop-slave-2</value>
+        <value>hbase-hadoop-master</value>
     </property>
     <property>
        <name>hbase.zookeeper.property.clientport</name>
